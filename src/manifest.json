@@ -1,10 +1,10 @@
 {
-	"name": "",
+	"name": "uniapp项目模板(微信)",
 	"appid": "",
 	"description": "",
 	"versionName": "1.0.0",
 	"versionCode": "100",
-	"transformPx": false,
+	"transformPx": true, //是否开启px转rpx
 	"app-plus": { /* 5+App特有相关 */
 		"usingComponents": true,
 		"splashscreen": {

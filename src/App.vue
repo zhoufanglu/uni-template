@@ -1,17 +1,18 @@
 <script>
 	export default {
-		onLaunch: function() {
-			console.log('App Launch')
+		onLaunch: function() { //初始化完成时触发 全局只触发一次
+			//console.log('App Launch')
 		},
-		onShow: function() {
-			console.log('App Show')
+		onShow: function() { //当 uni-app 启动，或从后台进入前台显示
+			//console.log('App Show')
 		},
-		onHide: function() {
-			console.log('App Hide')
+		onHide: function() { //从前台进入后台
+			//console.log('App Hide')
 		}
 	}
 </script>
 
-<style>
-	/*每个页面公共css */
+<style lang="scss">
+    @import "./wxcomponents/vant/common/index.wxss";
+    /*每个页面公共css */
 </style>
