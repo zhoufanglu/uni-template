@@ -11,6 +11,8 @@ import footComponent from "./components/global/footComponent"
 Vue.component('headComponent', headComponent)
 Vue.component('footComponent', footComponent)
 
+Vue.prototype.$url = 'http://139.196.58.71/'
+
 const app = new Vue({
   ...App
 })

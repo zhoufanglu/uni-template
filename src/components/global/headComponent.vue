@@ -32,9 +32,7 @@
 
 <style lang="scss">
     .p-head-component{
-        border: solid 1px black;
         .custom-head-nav{
-             background-color: red!important;
             /*.van-nav-bar__left{
                 color: white!important;
             }
@@ -42,9 +40,9 @@
                 color: white!important;
             }*/
          }
-         .custom-title{
+         /*.custom-title{
              color: white;
-         }
+         }*/
         .custom-return{
             color: white;
         }
