@@ -8,7 +8,8 @@
 		<h1>我是首页</h1>
 		<div>
 			<span class="title">{{title}}</span>
-			<div @click="go">go test page</div>
+			<div @click="go('test')">go test page</div>
+			<div @click="go('pageA')">go pageA page</div>
 
 		</div>
 		<footComponent></footComponent>
@@ -33,10 +34,15 @@
 
 		},
 		methods: {
-			go(){
-				console.log('xxx')
+			go(type) {
+				let url = ''
+				if(type === 'test'){
+					url = '/pages/test/index?id=1&name=lfz'
+				}else{
+					url = '/subPages/pageA'
+				}
 				uni.redirectTo({
-					url: '/pages/test/index?id=1&name=lfz'
+					url: url
 				})
 			}
 		}
