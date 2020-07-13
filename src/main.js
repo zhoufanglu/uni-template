@@ -7,11 +7,13 @@ App.mpType = 'app'
 
 import headComponent from "./components/global/headComponent"
 import footComponent from "./components/global/footComponent"
+import audioComponent from "./components/global/imt-audio"
 
 Vue.component('headComponent', headComponent)
 Vue.component('footComponent', footComponent)
+Vue.component('audioComponent', audioComponent)
 
-Vue.prototype.$url = 'http://qavpw2823.bkt.clouddn.com/'
+Vue.prototype.$url = 'http://119.45.53.85/picModule/imgFile'
 
 const app = new Vue({
   ...App

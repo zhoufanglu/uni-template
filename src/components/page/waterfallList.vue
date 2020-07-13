@@ -74,8 +74,7 @@
     </div>
 </template>
 <script>
-  import data from "../../assets/data/imgName";
-
+  import data from "../../assets/data/imgData.json"
   export default {
     name: '',
     components: {},
