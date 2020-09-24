@@ -33,7 +33,8 @@
 			"van-tabs": "./wxcomponents/vant/tabs/index",
 			"van-image": "./wxcomponents/vant/image/index",
 			"van-loading": "./wxcomponents/vant/loading/index",
-			"van-dialog": "./wxcomponents/vant/dialog/index"
+			"van-dialog": "./wxcomponents/vant/dialog/index",
+            "van-progress" : "./wxcomponents/vant/progress/index"
 		}
 	}
 }

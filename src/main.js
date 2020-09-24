@@ -13,8 +13,7 @@ Vue.component('headComponent', headComponent)
 Vue.component('footComponent', footComponent)
 Vue.component('audioComponent', audioComponent)
 
-Vue.prototype.$url = 'http://119.45.53.85/picModule/imgFile'
-
+Vue.prototype.$url = 'http://qgfmx93qu.hn-bkt.clouddn.com'
 const app = new Vue({
   ...App
 })

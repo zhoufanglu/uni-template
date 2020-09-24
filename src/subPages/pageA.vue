@@ -1,15 +1,19 @@
 <template>
-    <div class="content"
-         :style="{'padding-top':wxBarHeight+'px'}"
-    >
+    <div class="content">
         <headComponent
                 title="瀑布"
                 isReturn="false"
         ></headComponent>
-        <audioComponent continue :src="audio[now].src" :duration="audio[now].duration"
+        <autoAudio></autoAudio>
+        <!--<audioComponent continue :src="audio[now].src" :duration="audio[now].duration"
                    @prev="now = now === 0?audio.length-1:now-1"
-                   @next="now = now === audio.length-1?0:now+1"></audioComponent>
-        <div class="tab-box">
+                   @next="now = now === audio.length-1?0:now+1"
+        ></audioComponent>-->
+      <!--<audioComponent
+          autoplay continue :src="audio[now]" :duration="audio[now].duration" @prev="now = now === 0?audio.length-1:now-1" @next="now = now === audio.length-1?0:now+1">
+      </audioComponent>-->
+
+      <div class="tab-box">
         </div>
 
         <van-tabs :active="tabIndex" @change="tabChange">
@@ -25,19 +29,23 @@
 
 <script>
   import waterfallList from "../components/page/waterfallList";
-
+  import autoAudio from "@/components/page/autoAudio";
   export default {
-    components: {waterfallList},
+    components: {waterfallList, autoAudio},
     data() {
       return {
         title: 'subPageA',
         wxBarHeight: 0,
         tabIndex: 0,
 
-        audio: [{
-          src: 'http://119.45.53.85/picModule/MP4/TowerOfGoddess.mp3',
-          duration: 212
-        }],
+
+        audio: [
+          'http://xiaozhang.php-cli.cn/music-1.mp3',
+          'http://xiaozhang.php-cli.cn/music-2.mp3',
+          'http://xiaozhang.php-cli.cn/music-3.mp3',
+          'http://xiaozhang.php-cli.cn/music-4.mp3',
+          'http://xiaozhang.php-cli.cn/music-5.mp3'
+        ],
         now: 0
       }
     },
