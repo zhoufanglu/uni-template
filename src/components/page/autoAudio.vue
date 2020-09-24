@@ -1,7 +1,11 @@
 <template>
   <div class="p-auto-audio">
-    <van-button type="primary" @click="audioPause" v-show="!paused">暂停</van-button>
-    <van-button type="primary" @click="audioPlay" v-show="paused">播放</van-button>
+    <div class="p-audio-icon">
+      <van-icon color="#007aff" size="24" name="pause-circle-o" @click="audioPause" v-show="!paused" />
+      <van-icon color="#007aff" size="24" name="play-circle-o" @click="audioPlay" v-show="paused" />
+    </div>
+    <!--<van-button type="primary" @click="audioPause" v-show="!paused">暂停</van-button>
+    <van-button type="primary" @click="audioPlay" v-show="paused">播放</van-button>-->
     <div class="p-progress">
       <van-progress :percentage="parseInt(progress.currentTime/146*100)" />
     </div>
@@ -67,5 +71,10 @@ export default {
     height: 30px;
     margin: 0 auto;
   }
+}
+</style>
+<style lang="scss">
+.p-audio-icon{
+  padding: 6px;
 }
 </style>

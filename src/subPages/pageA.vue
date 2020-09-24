@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <headComponent
-                title="瀑布"
+                title="图片展示"
                 isReturn="false"
         ></headComponent>
         <autoAudio></autoAudio>
@@ -16,14 +16,15 @@
       <div class="tab-box">
         </div>
 
-        <van-tabs :active="tabIndex" @change="tabChange">
+        <!--<van-tabs :active="tabIndex" @change="tabChange">
             <van-tab title="2016">
-                <waterfallList></waterfallList>
+
             </van-tab>
             <van-tab title="2017">内容 2</van-tab>
             <van-tab title="2018">内容 3</van-tab>
             <van-tab title="2019">内容 4</van-tab>
-        </van-tabs>
+        </van-tabs>-->
+      <waterfallList></waterfallList>
     </div>
 </template>
 
