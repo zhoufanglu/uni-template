@@ -161,13 +161,14 @@
     filters: {
       filterPath(i, url) {
         if (i) {
+          console.log(164, `${url}/${i}`)
           return `${url}/${i}`
         }
       },
       filterHeight(height){
         if(height>1000){
           return height/10
-        }else 
+        }else
           return height
       }
     }
