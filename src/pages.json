@@ -1,13 +1,17 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
+        {
+          "path": "subPages/pageA"
+        },
+		/*{
 			"path": "pages/index/index"
-		},
+		},*/
 		{
 			"path": "pages/test/index"
 		}
 	],
-	"subPackages": [
+    //暂时去除分包
+	/*"subPackages": [
 		{
 			"root": "subPages",
 			"pages": [
@@ -16,7 +20,8 @@
 				}
 			]
 		}
-	],
+	],*/
+	"entryPagePath": "subPages/pageA",
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

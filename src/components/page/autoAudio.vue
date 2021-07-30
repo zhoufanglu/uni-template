@@ -78,16 +78,18 @@ export default {
   height: 72px;
   padding: 0 10px;
 
+
   .p-progress{
     width: 80%;
     height: 34px;
     margin-top: 17px;
     margin-left: 40px;
+	
   }
 }
 </style>
 <style lang="scss">
 .p-audio-icon{
-  padding: 6px;
+  //padding: 6px;
 }
 </style>

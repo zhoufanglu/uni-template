@@ -94,6 +94,13 @@
     onReady() { //此页面初次在屏幕上渲染完成之后会执行我
       this.calcList()
       this.screenWidth = wx.getSystemInfoSync().windowWidth
+      wx.showShareMenu({
+
+        withShareTicket:true,
+
+        menus:['shareAppMessage','shareTimeline']
+
+      })
     },
     methods: {
       calcList() {
@@ -161,7 +168,6 @@
     filters: {
       filterPath(i, url) {
         if (i) {
-          console.log(164, `${url}/${i}`)
           return `${url}/${i}`
         }
       },

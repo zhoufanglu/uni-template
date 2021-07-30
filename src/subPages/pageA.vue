@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <headComponent
-                title="图片展示"
+                title="diana & tog"
                 isReturn="false"
         ></headComponent>
         <autoAudio></autoAudio>
