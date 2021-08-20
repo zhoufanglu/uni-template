@@ -1,11 +1,12 @@
 <template>
     <div class="p-waterfall">
         <div class="p-col">
+          <!--:height="i.height|filterHeight"-->
             <van-image
                     @click="imgItemClick(i, index, 'col_1')"
                     :width="screenWidth/2"
-                    :height="i.height|filterHeight"
-                    fit="cover"
+                    :height="i.height*((screenWidth/2)/i.width)"
+                    fit="contain"
                     use-loading-slot
                     use-error-slot
                     lazy-load
@@ -27,7 +28,7 @@
             <van-image
                     @click="imgItemClick(i, index, 'col_2')"
                     :width="screenWidth/2"
-                    :height="i.height|filterHeight"
+                    :height="i.height*((screenWidth/2)/i.width)"
                     fit="cover"
                     use-loading-slot
                     use-error-slot

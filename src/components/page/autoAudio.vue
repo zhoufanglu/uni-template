@@ -6,9 +6,9 @@
     </div>
     <!--<van-button type="primary" @click="audioPause" v-show="!paused">暂停</van-button>
     <van-button type="primary" @click="audioPlay" v-show="paused">播放</van-button>-->
-    <div class="p-progress">
+<!--    <div class="p-progress">
       <van-progress :percentage="parseInt(progress.currentTime/295*100)" />
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
 
     this.innerAudioContext.autoplay = true;
     this.innerAudioContext.loop = true
-    this.innerAudioContext.src = 'http://110.40.136.102:3307/assets/fenzhishi.mp3'
+    this.innerAudioContext.src = 'http://lufangzhou.top/fenzhishi.mp3'
     this.innerAudioContext.onPlay(() => {
       console.log('开始播放');
     });
@@ -84,7 +84,7 @@ export default {
     height: 34px;
     margin-top: 17px;
     margin-left: 40px;
-	
+
   }
 }
 </style>
