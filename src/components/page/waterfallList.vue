@@ -1,8 +1,9 @@
 <template>
     <div class="p-waterfall">
-        <div class="p-col">
+        <div class="p-col left">
           <!--:height="i.height|filterHeight"-->
             <van-image
+                    class="image-item"
                     @click="imgItemClick(i, index, 'col_1')"
                     :width="screenWidth/2"
                     :height="i.height*((screenWidth/2)/i.width)"
@@ -24,8 +25,9 @@
                 <text slot="error">加载失败</text>
             </van-image>
         </div>
-        <div class="p-col">
+        <div class="p-col right">
             <van-image
+                    class="image-item"
                     @click="imgItemClick(i, index, 'col_2')"
                     :width="screenWidth/2"
                     :height="i.height*((screenWidth/2)/i.width)"
@@ -102,6 +104,7 @@
         menus:['shareAppMessage','shareTimeline']
 
       })
+
     },
     methods: {
       calcList() {
@@ -186,16 +189,28 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        box-sizing: border-box;
         width: 100vm;
+
 
         .p-col {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             flex: 1;
         }
 
-        .p-dialog-content {
+        /*.left{
+          padding-right: 3px;
+          box-sizing: border-box;
+        }
+        .right{
+          padding-left: 3px;
+          box-sizing: border-box;
+        }*/
+
+      .p-dialog-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -224,5 +239,12 @@
                 right: 0 !important;
             }
         }
+    }
+    .image-item{
+      //display: block!important;
+      //border: solid 1px red;
+      >view{
+        display: block!important;
+      }
     }
 </style>

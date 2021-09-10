@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 .p-auto-audio {
-  display: flex;
+  display: none;
   align-items: center;
   position: fixed;
   z-index: 999;
